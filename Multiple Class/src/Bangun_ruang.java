@@ -61,11 +61,12 @@ public class Bangun_ruang {
     //    balok
     private static void Balok(){
         System.out.println("Balok");
-        System.out.println("Masukan p : ");
-        System.out.println("Masukan l : ");
-        System.out.println("Masukan t : ");
+        System.out.print("Masukan p : ");
         float p = input.nextFloat();
+        System.out.print("Masukan l : ");
         float l = input.nextFloat();
+        System.out.print("Masukan t : ");
+
         float t = input.nextFloat();
         float luas = (2 * p * l) + (2 * p * t) + (2 * l * t);
         System.out.println("luas = " +luas);
@@ -77,11 +78,13 @@ public class Bangun_ruang {
     //    limas segiempat
     private static void LimasSegiempat(){
         System.out.println("Limas Segiempat");
-        System.out.println("Masukan sisi : ");
-        System.out.println("Masukan a : ");
-        System.out.println("Masukan t : ");
+        System.out.print("Masukan sisi : ");
         float sisi = input.nextFloat();
+
+        System.out.print("Masukan a : ");
         float a = input.nextFloat();
+
+        System.out.print("Masukan t : ");
         float t = input.nextFloat();
         float luaspermukaan  = (float) ((sisi * sisi) + (4 * (0.5 * a * t)));
         System.out.println("luas permukaan = " +luaspermukaan);
@@ -94,13 +97,13 @@ public class Bangun_ruang {
     //    prisma segitiga
     private static void PrismaSegitiga(){
         System.out.println("Prisma Segitiga");
-        System.out.println("Masukan sisi : ");
-        System.out.println("Masukan a    : ");
-        System.out.println("Masukan t    : ");
-        System.out.println("Masukan T    : ");
+        System.out.print("Masukan sisi : ");
         float sisi = input.nextFloat();
+        System.out.print("Masukan a    : ");
         float a = input.nextFloat();
+        System.out.print("Masukan t    : ");
         float t = input.nextFloat();
+        System.out.print("Masukan T    : ");
         float T = input.nextFloat();
         float luaspermukaan= (a  * t) + (3 * sisi) * T;
         System.out.println("luas permukaan = " +luaspermukaan);
@@ -111,9 +114,10 @@ public class Bangun_ruang {
     //    tabung
     private static void Tabung(){
         System.out.println("Tabung");
-        System.out.println("Masukan r   : ");
-        System.out.println("Masukan t   : ");
+        System.out.print("Masukan r   : ");
         float r = input.nextFloat();
+
+        System.out.print("Masukan t   : ");
         float t = input.nextFloat();
         float luaspermukaan = (float) ((2 * 3.14 * r * t) + (3.14 * (r * r)));
         System.out.println("luas permukaan = " +luaspermukaan);
@@ -137,12 +141,14 @@ public class Bangun_ruang {
     //    kerucut
     private static void Kerucut(){
         System.out.println("Kerucut");
-        System.out.println("Masukan s : ");
-        System.out.println("Masukan r : ");
-        System.out.println("Masukan t : ");
+        System.out.print("Masukan s : ");
         float s = input.nextFloat();
+
+        System.out.print("Masukan r : ");
         float r = input.nextFloat();
+        System.out.print("Masukan t : ");
         float t = input.nextFloat();
+
         float luaspermukaan = (float) ((3.14 * r * s) * (3.14 * (r * r)));
         System.out.println("luas permukaan = " +luaspermukaan);
         float volume = (float) (0.3 * 3.14 * (r * r) * t);
